@@ -29,7 +29,7 @@ namespace Apple.Application.Base.Config
         private readonly bool _initialized;
 
         /// <summary>
-        /// AppleConfig constructor.
+        /// AppleConfig.
         /// </summary>
         /// <param name="filePath"></param>
         public AppleConfig(string filePath)

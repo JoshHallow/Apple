@@ -1,3 +1,10 @@
 C:\Users\Davinia\Dropbox (CraftRP)\CraftRP Team Folder\Apple\Apple\bin\Debug\Apple.exe.config
 C:\Users\Administrator\Dropbox (CraftRP)\CraftRP Team Folder\Apple\Apple\bin\Debug\Apple.exe.config
 C:\Users\Davinia\Documents\GitHub\Apple\Apple\bin\Debug\Apple.exe.config
+C:\Users\Davinia\Documents\GitHub\Apple\Apple\bin\Debug\Apple.exe
+C:\Users\Davinia\Documents\GitHub\Apple\Apple\bin\Debug\Apple.pdb
+C:\Users\Davinia\Documents\GitHub\Apple\Apple\bin\Debug\log4net.dll
+C:\Users\Davinia\Documents\GitHub\Apple\Apple\bin\Debug\log4net.xml
+C:\Users\Davinia\Documents\GitHub\Apple\Apple\obj\Debug\Apple.csprojResolveAssemblyReference.cache
+C:\Users\Davinia\Documents\GitHub\Apple\Apple\obj\Debug\Apple.exe
+C:\Users\Davinia\Documents\GitHub\Apple\Apple\obj\Debug\Apple.pdb
