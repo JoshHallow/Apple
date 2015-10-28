@@ -11,20 +11,21 @@
         private readonly Dictionary<string, string> _configValues = null;
         private readonly FileInfo _configFile = null;
         private readonly ILog _log = null;
-        private bool _initialized;
+        private readonly bool _initialized;
 
         public AppleConfig(string filePath)
-        {
-            this._configValues = new Dictionary<string, string>();
-            this._configFile = new FileInfo(filePath);
-            this._log = LogManager.GetLogger(typeof(AppleConfig));
-        }
-
-        public void Initialize()
         {
             if (this._initialized)
                 return;
 
+            this._configValues = new Dictionary<string, string>();
+            this._configFile = new FileInfo(filePath);
+            this._log = LogManager.GetLogger(typeof(AppleConfig));
+            this._initialized = this.Initialize();
+        }
+
+        private bool Initialize()
+        {
             try
             {
                 foreach (string line in File.ReadLines(this._configFile.ToString()).Where(IsConfigurationLine))
@@ -42,10 +43,6 @@
                 _log.Error(exception); // assuming overload that takes an exception.
                 throw new ConfigurationUnavailableException(exception);
             }
-            finally
-            {
-                this._initialized = true;
-            }
         }
 
         private bool IsConfigurationLine(string Line)
@@ -55,7 +52,15 @@
 
         public string GetConfigElement(string Key)
         {
+            if (!this.IsInitialized)
+                return null;
+
             return this._configValues[Key];
+        }
+
+        public bool IsInitialized
+        {
+            get { return this._initialized; }
         }
     }
 }
