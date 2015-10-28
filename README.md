@@ -8,5 +8,6 @@ What has changed since the last version?
 - Removed useless while loop in program.cs.
 - Removed deprecated AppleServer file.
 
+
 Current Developers
 - Josh Hallow -> Creator
