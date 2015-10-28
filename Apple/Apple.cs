@@ -6,25 +6,24 @@ namespace Apple
 {
     internal sealed class Apple
     {
-        /// <summary>
-        /// AppleConfig
-        /// </summary>
         private AppleConfig _appleConfig;
-        
-        /// <summary>
-        /// ConsoleWorker
-        /// </summary>
         private ConsoleWorker _consoleWorker;
+        private static ServerInformation _severInfo;
 
-        /// <summary>
-        /// Apple
-        /// </summary>
         public Apple()
         {
+            _severInfo = new ServerInformation
+            {
+                ServerStarted = DateTime.Now
+            };
+
             _appleConfig = new AppleConfig("config.ini");
             _consoleWorker = new ConsoleWorker(_appleConfig);
+        }
 
-            Console.WriteLine("Hello World.");
+        public static ServerInformation ServerInformation
+        {
+            get { return _severInfo; }
         }
     }
 }

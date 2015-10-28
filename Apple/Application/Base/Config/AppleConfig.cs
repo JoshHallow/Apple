@@ -8,58 +8,32 @@ namespace Apple.Application.Base.Config
 {
     internal class AppleConfig
     {
-        /// <summary>
-        /// List of configuration items
-        /// </summary>
         private Dictionary<string, string> _configItems;
-
-        /// <summary>
-        /// Config file info
-        /// </summary>
-        private readonly FileInfo _configFile;
-
-        /// <summary>
-        /// Log4net logger.
-        /// </summary>
         private readonly ILog _log;
+        private readonly object syncRoot = new object();
 
-        /// <summary>
-        /// Checks if class has been initialized.
-        /// </summary>
-        private readonly bool _initialized;
-
-        /// <summary>
-        /// AppleConfig.
-        /// </summary>
-        /// <param name="filePath"></param>
         public AppleConfig(string filePath)
         {
-            if (_initialized)
-                return;
-
             _configItems = new Dictionary<string, string>();
-            _configFile = new FileInfo(filePath);
             _log = LogManager.GetLogger(typeof(AppleConfig));
-            _initialized = this.Initialize();
+
+            if (!LoadConfig(filePath))
+                throw new Exception("Failed to load config data");
         }
 
-        /// <summary>
-        /// Initializes AppleConfig
-        /// </summary>
-        private bool Initialize()
+        private bool LoadConfig(string file)
         {
             try
             {
-                foreach (string line in File.ReadLines(_configFile.FullName).Where(IsConfigurationLine))
+                this._configItems.Clear();
+
+                lock (syncRoot)
                 {
-                    var splittedLine = line.Split('=');
-
-                    String key = splittedLine[0];
-                    String value = splittedLine[1];
-
-                    _configItems[key] = value;
+                    _configItems = File.ReadLines(file)
+                    .Where(IsConfigurationLine)
+                    .Select(line => line.Split('='))
+                    .ToDictionary(line => line[0], line => line[1]);
                 }
-
                 return true;
             }
             catch (Exception exception)
@@ -69,46 +43,25 @@ namespace Apple.Application.Base.Config
             }
         }
 
-        /// <summary>
-        /// Checks for valid config line
-        /// </summary>
-        /// <param name="Line">String to check</param>
-        /// <returns></returns>
         private bool IsConfigurationLine(string line)
         {
             return !line.StartsWith("#") && line.Contains("=");
         }
 
-        /// <summary>
-        /// Returns a config items value by its key.
-        /// </summary>
-        /// <param name="Key">Config Key</param>
-        /// <returns>Config Value</returns>
         public string GetConfigElement(string key)
         {
             if (!IsInitialized)
                 return null;
 
-            return this._configItems[key];
+            lock (syncRoot)
+            {
+                return this._configItems[key];
+            }
         }
 
-        /// <summary>
-        /// Checks if class has been initialized.
-        /// </summary>
         public bool IsInitialized
         {
-            get { return _initialized; }
-        }
-
-        /// <summary>
-        /// Refreshes config
-        /// </summary>
-        public void RefreshConfig()
-        {
-            if (!_initialized)
-                return;
-
-            this.Initialize();
+            get { return _configItems != null; }
         }
     }
 }
