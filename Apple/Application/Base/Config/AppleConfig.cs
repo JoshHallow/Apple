@@ -1,17 +1,17 @@
-﻿namespace Apple.Application.Base.Config
-{
-    using log4net;
-    using System;
-    using System.Collections.Generic;
-    using System.IO;
-    using System.Linq;
+﻿using log4net;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
+namespace Apple.Application.Base.Config
+{
     internal class AppleConfig
     {
         /// <summary>
         /// List of configuration items
         /// </summary>
-        private readonly Dictionary<string, string> _configItems;
+        private Dictionary<string, string> _configItems;
 
         /// <summary>
         /// Config file info
@@ -50,14 +50,14 @@
         {
             try
             {
-                foreach (string line in File.ReadLines(this._configFile.ToString()).Where(IsConfigurationLine))
+                foreach (string line in File.ReadLines(_configFile.FullName).Where(IsConfigurationLine))
                 {
                     var splittedLine = line.Split('=');
 
-                    const int keyIndex = 0;
-                    const int valueIndex = 1;
+                    String key = splittedLine[0];
+                    String value = splittedLine[1];
 
-                    this._configItems[splittedLine[keyIndex]] = splittedLine[valueIndex];
+                    _configItems[key] = value;
                 }
 
                 return true;
@@ -74,22 +74,22 @@
         /// </summary>
         /// <param name="Line">String to check</param>
         /// <returns></returns>
-        private bool IsConfigurationLine(string Line)
+        private bool IsConfigurationLine(string line)
         {
-            return (!string.IsNullOrWhiteSpace(Line) && !Line.StartsWith("#") && Line.Contains("="));
+            return !line.StartsWith("#") && line.Contains("=");
         }
 
         /// <summary>
         /// Returns a config items value by its key.
         /// </summary>
-        /// <param name="Key"></param>
-        /// <returns></returns>
-        public string GetConfigElement(string Key)
+        /// <param name="Key">Config Key</param>
+        /// <returns>Config Value</returns>
+        public string GetConfigElement(string key)
         {
-            if (!this.IsInitialized)
+            if (!IsInitialized)
                 return null;
 
-            return this._configItems[Key];
+            return this._configItems[key];
         }
 
         /// <summary>
@@ -97,7 +97,7 @@
         /// </summary>
         public bool IsInitialized
         {
-            get { return this._initialized; }
+            get { return _initialized; }
         }
 
         /// <summary>
@@ -105,6 +105,9 @@
         /// </summary>
         public void RefreshConfig()
         {
+            if (!_initialized)
+                return;
+
             this.Initialize();
         }
     }
