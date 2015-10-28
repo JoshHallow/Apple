@@ -1,8 +1,8 @@
-﻿namespace Apple
-{
-    using log4net.Config;
-    using System;
+﻿using log4net.Config;
+using System;
 
+namespace Apple
+{
     static class Program
     {
         static void Main(string[] args)
