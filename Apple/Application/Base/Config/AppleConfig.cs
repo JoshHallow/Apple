@@ -9,12 +9,12 @@
     internal class AppleConfig
     {
         /// <summary>
-        /// Holds a list of configuration keys and values.
+        /// List of configuration items
         /// </summary>
         private readonly Dictionary<string, string> _configItems;
 
         /// <summary>
-        /// Holds file information about the configuration file.
+        /// Config file info
         /// </summary>
         private readonly FileInfo _configFile;
 
@@ -24,7 +24,7 @@
         private readonly ILog _log;
 
         /// <summary>
-        /// Checks if the class has been initialized already.
+        /// Checks if class has been initialized.
         /// </summary>
         private readonly bool _initialized;
 
@@ -70,7 +70,7 @@
         }
 
         /// <summary>
-        /// Checks if a string is a valid config item.
+        /// Checks for valid config line
         /// </summary>
         /// <param name="Line">String to check</param>
         /// <returns></returns>
@@ -80,7 +80,7 @@
         }
 
         /// <summary>
-        /// Returns a config item by its key in the dictionary.
+        /// Returns a config items value by its key.
         /// </summary>
         /// <param name="Key"></param>
         /// <returns></returns>
@@ -93,7 +93,7 @@
         }
 
         /// <summary>
-        /// Checksa if the class has been initialized.
+        /// Checks if class has been initialized.
         /// </summary>
         public bool IsInitialized
         {
@@ -101,7 +101,7 @@
         }
 
         /// <summary>
-        /// Refreshes config items from the config file.
+        /// Refreshes config
         /// </summary>
         public void RefreshConfig()
         {
