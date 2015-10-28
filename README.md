@@ -6,7 +6,7 @@ The below list will show what has changed / finished in the current progression 
 What has changed since the last version?
 - ConfigManager.cs was totally re-written.
 - Removed useless while loop in program.cs.
-- Removed deprecated AppleServer.
+- Removed deprecated AppleServer file.
 
 Current Developers:
 Josh Hallow -> Creator
