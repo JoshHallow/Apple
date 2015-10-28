@@ -34,13 +34,13 @@ namespace Apple.Application.Base.Config
         /// <param name="filePath"></param>
         public AppleConfig(string filePath)
         {
-            if (this._initialized)
+            if (_initialized)
                 return;
 
-            this._configItems = new Dictionary<string, string>();
-            this._configFile = new FileInfo(filePath);
-            this._log = LogManager.GetLogger(typeof(AppleConfig));
-            this._initialized = this.Initialize();
+            _configItems = new Dictionary<string, string>();
+            _configFile = new FileInfo(filePath);
+            _log = LogManager.GetLogger(typeof(AppleConfig));
+            _initialized = this.Initialize();
         }
 
         /// <summary>
