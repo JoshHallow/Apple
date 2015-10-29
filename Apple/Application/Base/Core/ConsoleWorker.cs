@@ -12,9 +12,9 @@ namespace Apple.Application.Base.Core
     {
         private Timer _consoleTimer;
 
-        public ConsoleWorker(AppleConfig config)
+        public ConsoleWorker(ushort consoleInterval)
         {
-            _consoleTimer = new Timer(int.Parse(config.GetConfigElement("console.timer.interval")));
+            _consoleTimer = new Timer(consoleInterval);
             _consoleTimer.Elapsed += new ElapsedEventHandler(OnElapsed);
             _consoleTimer.Enabled = true; 
         }
@@ -24,10 +24,10 @@ namespace Apple.Application.Base.Core
             DateTime Startup = Apple.ServerInformation.ServerStarted;
             TimeSpan Uptime = DateTime.Now - Startup;
 
-            string days = Uptime.Days + " day" + (Uptime.Days != 1 ? "s" : "") + ", ";
-            string hours = Uptime.Hours + " hour" + (Uptime.Hours != 1 ? "s" : "") + ", and ";
-            string mins = Uptime.Minutes + " min" + (Uptime.Minutes != 1 ? "s" : "");
-            string UptimeString = days + hours + mins;
+            string UptimeString = string.Format("{0}, {1}, and {2}",
+                Uptime.Days + " day" + (Uptime.Days != 1 ? "s" : ""),
+                Uptime.Hours + " hour" + (Uptime.Hours != 1 ? "s" : ""),
+                Uptime.Minutes + " min" + (Uptime.Minutes != 1 ? "s" : ""));
 
             Console.Title = "Apple Server | Uptime: " + UptimeString;
         }
