@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Apple.Application.Base.Core
 {
-    class ServerInformation
+    sealed class ServerInformation
     {
         public DateTime ServerStarted { get; set; }
         public Version ServerVersion { get; set; }

@@ -38,7 +38,7 @@ namespace Apple.Application.Base.Connection
         {
             try
             {
-                _settings._log.Info("New connection was received");
+                Apple.Game.PlayerManager.CreatePlayer(_serverSocket.EndAccept(AsyncResult));
             }
             catch (Exception exception)
             {

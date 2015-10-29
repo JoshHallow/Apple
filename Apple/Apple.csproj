@@ -49,11 +49,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Apple.cs" />
+    <Compile Include="Application\Base\Communication\Packets\PacketManager.cs" />
     <Compile Include="Application\Base\Config\AppleConfig.cs" />
     <Compile Include="Application\Base\Sockets\SocketManager.cs" />
     <Compile Include="Application\Base\Core\ConsoleWorker.cs" />
     <Compile Include="Application\Base\Core\ServerInformation.cs" />
     <Compile Include="Application\Base\Sockets\SocketSettings.cs" />
+    <Compile Include="Application\Game\GameManager.cs" />
+    <Compile Include="Application\Game\Players\Components\Player\Packets\PlayerPacketManager.cs" />
+    <Compile Include="Application\Game\Players\Data\PlayerData.cs" />
+    <Compile Include="Application\Game\Players\Data\RoleplayData.cs" />
+    <Compile Include="Application\Game\Players\Data\UserData.cs" />
+    <Compile Include="Application\Game\Players\Player.cs" />
+    <Compile Include="Application\Game\Players\PlayerManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -62,7 +70,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Application\Game\" />
+    <Folder Include="Application\Base\Communication\Packets\Incoming\" />
+    <Folder Include="Application\Base\Communication\Packets\Outgoing\" />
+    <Folder Include="Application\Game\Players\Components\Roleplay\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="icon.ico" />

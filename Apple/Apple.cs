@@ -6,6 +6,7 @@ using Apple.Application.Base.Connection;
 using Apple.Application.Base.Sockets;
 using System.Net;
 using log4net;
+using Apple.Application.Game;
 
 namespace Apple
 {
@@ -15,6 +16,7 @@ namespace Apple
         private ConsoleWorker _consoleWorker;
         private SocketManager _socketManager;
 
+        private static GameManager _gameManager;
         private static ServerInformation _severInfo;
 
         public Apple()
@@ -40,11 +42,18 @@ namespace Apple
 
             _socketManager = new SocketManager(socketSettings);
             _appleConfig = new AppleConfig("config.ini");
+
+            _gameManager = new GameManager();
         }
 
         public static ServerInformation ServerInformation
         {
             get { return _severInfo; }
+        }
+
+        public static GameManager Game
+        {
+            get { return _gameManager; }
         }
     }
 }
