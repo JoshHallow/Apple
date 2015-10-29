@@ -27,7 +27,8 @@ namespace Apple.Application.Game.Players
 
         public void DisposePlayer(uint id)
         {
-
+            //call disconnect
+            //remove/dispose from dictionary
         }
     }
 }

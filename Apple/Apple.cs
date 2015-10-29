@@ -12,12 +12,12 @@ namespace Apple
 {
     internal sealed class Apple
     {
-        private AppleConfig _appleConfig;
         private ConsoleWorker _consoleWorker;
         private SocketManager _socketManager;
 
         private static GameManager _gameManager;
         private static ServerInformation _severInfo;
+        private static AppleConfig _appleConfig;
 
         public Apple()
         {
@@ -32,8 +32,8 @@ namespace Apple
 
             SocketSettings socketSettings = new SocketSettings
             {
-                EndPoint = new IPEndPoint(IPAddress.Any, 30 * 1000),
-                SocketBacklog = 100,
+                EndPoint = new IPEndPoint(IPAddress.Any, int.Parse(_appleConfig.GetConfigElement("game.socket.port"))),
+                SocketBacklog = ushort.Parse(_appleConfig.GetConfigElement("game.socket.backlog")),
                 _log = LogManager.GetLogger(typeof(SocketManager))
             };
 
@@ -54,6 +54,11 @@ namespace Apple
         public static GameManager Game
         {
             get { return _gameManager; }
+        }
+
+        public static AppleConfig Config
+        {
+            get { return _appleConfig; }
         }
     }
 }
