@@ -16,7 +16,7 @@ namespace Apple.Application.Base.Core
         {
             _consoleTimer = new Timer(int.Parse(config.GetConfigElement("console.timer.interval")));
             _consoleTimer.Elapsed += new ElapsedEventHandler(OnElapsed);
-            _consoleTimer.Enabled = true; // Enable it
+            _consoleTimer.Enabled = true;
         }
 
         public void OnElapsed(object sender, ElapsedEventArgs e)
