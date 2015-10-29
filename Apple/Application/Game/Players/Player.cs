@@ -3,6 +3,7 @@ using Apple.Application.Game.Players.Data;
 using log4net;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net.Sockets;
 using System.Text;
@@ -72,18 +73,7 @@ namespace Apple.Application.Game.Players
             }
             else if (packetData[0] != 67)
             {
-                int num = 0;
-                while (num < packetData.Length)
-                {
-                    int num2 = Base64Encoding.DecodeInt32(new byte[] { Data[num++], Data[num++], Data[num++] });
-                    uint messageId = Base64Encoding.DecodeUInt32(new byte[] { Data[num++], Data[num++] });
-                    byte[] body = new byte[num2 - 2];
-                    for (int i = 0; i < body.Length; i++)
-                    {
-                        body[i] = packetData[num++];
-                    }
-                    IncomingPacket incomingPacket = new IncomingPacket(messageId, body);
-                }
+
             }
         }
 

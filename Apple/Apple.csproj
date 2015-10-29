@@ -52,6 +52,7 @@
     <Compile Include="Application\Base\Communication\Packets\Incoming\IncomingPacket.cs" />
     <Compile Include="Application\Base\Communication\Packets\PacketManager.cs" />
     <Compile Include="Application\Base\Config\AppleConfig.cs" />
+    <Compile Include="Application\Base\Core\Util\AppleEncoding.cs" />
     <Compile Include="Application\Base\Sockets\SocketManager.cs" />
     <Compile Include="Application\Base\Core\ConsoleWorker.cs" />
     <Compile Include="Application\Base\Core\ServerInformation.cs" />
