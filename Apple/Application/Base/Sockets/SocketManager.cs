@@ -14,8 +14,9 @@ namespace Apple.Application.Base.Connection
         private Socket _serverSocket;
         private SocketSettings _settings;
 
-        public SocketManager()
+        public SocketManager(SocketSettings settings)
         {
+            _settings = settings;
             _serverSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
             BeginListen();
@@ -24,7 +25,7 @@ namespace Apple.Application.Base.Connection
 
         public void BeginListen()
         {
-            _serverSocket.Bind(new IPEndPoint(IPAddress.Any, _settings.SocketPort));
+            _serverSocket.Bind(_settings.EndPoint);
             _serverSocket.Listen(_settings.SocketBacklog);
         }
 

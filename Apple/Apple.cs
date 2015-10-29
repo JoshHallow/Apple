@@ -2,6 +2,10 @@
 using Apple.Application.Base.Config;
 using Apple.Application.Base.Core;
 using System.Collections.Generic;
+using Apple.Application.Base.Connection;
+using Apple.Application.Base.Sockets;
+using System.Net;
+using log4net;
 
 namespace Apple
 {
@@ -9,6 +13,8 @@ namespace Apple
     {
         private AppleConfig _appleConfig;
         private ConsoleWorker _consoleWorker;
+        private SocketManager _socketManager;
+
         private static ServerInformation _severInfo;
 
         public Apple()
@@ -22,8 +28,18 @@ namespace Apple
                 Developers = new List<string> { "Josh Hallow as creator." }
             };
 
+            SocketSettings socketSettings = new SocketSettings
+            {
+                EndPoint = new IPEndPoint(IPAddress.Any, 30 * 1000),
+                SocketBacklog = 100,
+                _log = LogManager.GetLogger(typeof(SocketManager))
+            };
+
+            string interval = _appleConfig.GetConfigElement("console.timer.interval");
+            _consoleWorker = new ConsoleWorker(ushort.Parse(interval));
+
+            _socketManager = new SocketManager(socketSettings);
             _appleConfig = new AppleConfig("config.ini");
-            _consoleWorker = new ConsoleWorker(ushort.Parse(_appleConfig.GetConfigElement("console.timer.interval")));
         }
 
         public static ServerInformation ServerInformation
