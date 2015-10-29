@@ -60,7 +60,7 @@ namespace Apple.Application.Game.Players
 
             byte[] packetData = new byte[bytesRead];
             Array.Copy(_playerData.SocketBuffer, packetData, bytesRead);
-
+            
             if (packetData.Length <= 0)
                 return;
 
@@ -73,7 +73,7 @@ namespace Apple.Application.Game.Players
             }
             else if (packetData[0] != 67)
             {
-
+                Console.WriteLine("Attempting to handle packet " + packetData[0]);
             }
         }
 
