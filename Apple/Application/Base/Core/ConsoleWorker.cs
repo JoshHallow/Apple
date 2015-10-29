@@ -8,7 +8,7 @@ using System.Timers;
 
 namespace Apple.Application.Base.Core
 {
-    class ConsoleWorker
+    sealed class ConsoleWorker
     {
         private Timer _consoleTimer;
 
@@ -24,12 +24,12 @@ namespace Apple.Application.Base.Core
             DateTime Startup = Apple.ServerInformation.ServerStarted;
             TimeSpan Uptime = DateTime.Now - Startup;
 
-            string UptimeString = string.Format("{0}, {1}, and {2}",
-                Uptime.Days + " day" + (Uptime.Days != 1 ? "s" : ""),
-                Uptime.Hours + " hour" + (Uptime.Hours != 1 ? "s" : ""),
-                Uptime.Minutes + " min" + (Uptime.Minutes != 1 ? "s" : ""));
+            string days = String.Format("{0} day{1}, ", Uptime.Days, (Uptime.Days != 1 ? "s" : ""));
+            string hours = String.Format("{0} hour{1}, and ", Uptime.Hours, (Uptime.Hours != 1 ? "s" : ""));
+            string mins = String.Format("{0} min{1}", Uptime.Minutes, (Uptime.Minutes != 1 ? "s" : ""));
 
-            Console.Title = "Apple Server | Uptime: " + UptimeString;
+            string uptime = days + hours + mins;
+            Console.Title = "Apple Server | Uptime: " + uptime;
         }
     }
 }

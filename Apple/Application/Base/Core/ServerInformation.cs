@@ -9,6 +9,9 @@ namespace Apple.Application.Base.Core
     class ServerInformation
     {
         public DateTime ServerStarted { get; set; }
-        //public ushort StartupTime { get; set; } // in ms
+        public Version ServerVersion { get; set; }
+        public string Author { get; set; }
+        public string Title { get; set; }
+        public List<string> Developers { get; set; }
     }
 }

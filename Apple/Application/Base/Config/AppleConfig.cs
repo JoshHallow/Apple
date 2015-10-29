@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace Apple.Application.Base.Config
 {
-    internal class AppleConfig
+    internal sealed class AppleConfig
     {
         private Dictionary<string, string> _configItems;
         private readonly ILog _log;
@@ -25,7 +25,7 @@ namespace Apple.Application.Base.Config
         {
             try
             {
-                this._configItems.Clear();
+                _configItems.Clear();
 
                 lock (syncRoot)
                 {

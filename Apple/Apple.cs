@@ -1,6 +1,7 @@
 ﻿using System;
 using Apple.Application.Base.Config;
 using Apple.Application.Base.Core;
+using System.Collections.Generic;
 
 namespace Apple
 {
@@ -14,7 +15,11 @@ namespace Apple
         {
             _severInfo = new ServerInformation
             {
-                ServerStarted = DateTime.Now
+                ServerStarted = DateTime.Now,
+                ServerVersion = new Version("2.0.0"),
+                Author = "Josh Hallow",
+                Title = "Apple Server",
+                Developers = new List<string> { "Josh Hallow as creator." }
             };
 
             _appleConfig = new AppleConfig("config.ini");
