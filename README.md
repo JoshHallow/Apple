@@ -5,4 +5,4 @@ Current Version
 - 2.0.0
 
 Current Developers
-- Josh Hallow -> Creator
+- Josh Hallow
