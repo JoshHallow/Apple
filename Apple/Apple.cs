@@ -18,7 +18,7 @@ namespace Apple
             };
 
             _appleConfig = new AppleConfig("config.ini");
-            _consoleWorker = new ConsoleWorker(_appleConfig);
+            _consoleWorker = new ConsoleWorker(ushort.Parse(_appleConfig.GetConfigElement("console.timer.interval")));
         }
 
         public static ServerInformation ServerInformation
