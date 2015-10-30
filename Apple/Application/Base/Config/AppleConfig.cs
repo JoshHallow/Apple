@@ -51,7 +51,7 @@ namespace Apple.Application.Base.Config
         public string GetConfigElement(string key)
         {
             if (!IsInitialized)
-                return null;
+                throw new NotImplementedException("Config data has not get been implemented.");
 
             lock (syncRoot)
             {

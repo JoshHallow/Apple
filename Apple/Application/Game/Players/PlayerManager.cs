@@ -20,9 +20,10 @@ namespace Apple.Application.Game.Players
             _log = LogManager.GetLogger(typeof(PlayerManager));
         }
 
-        public void CreatePlayer(Socket socket)
+        public bool TryCreatePlayer(Socket socket)
         {
             _log.Info("Incoming connection from " + socket.RemoteEndPoint.ToString().Split(':')[0]);
+            return (_activePlayers.TryAdd((uint)_activePlayers.Count, new Player((uint)_activePlayers.Count, socket)));
         }
 
         public void DisposePlayer(uint id)

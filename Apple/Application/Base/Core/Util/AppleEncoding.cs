@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Apple.Application.Base.Core.Util
 {
-    sealed class AppleEncoding
+    class AppleEncoding
     {
-        public static int DecodeInt32(byte[] bzData)
+        public int DecodeInt32(byte[] bzData)
         {
             int num = 0;
             int num2 = 0;
@@ -25,12 +25,12 @@ namespace Apple.Application.Base.Core.Util
             return num;
         }
 
-        public static uint DecodeUInt32(byte[] bzData)
+        public uint DecodeUInt32(byte[] bzData)
         {
             return (uint)DecodeInt32(bzData);
         }
 
-        public static byte[] EncodeInt32(int i, int numBytes)
+        public byte[] EncodeInt32(int i, int numBytes)
         {
             byte[] buffer = new byte[numBytes];
             for (int j = 1; j <= numBytes; j++)
@@ -41,7 +41,7 @@ namespace Apple.Application.Base.Core.Util
             return buffer;
         }
 
-        public static byte[] EncodeUint32(uint i, int numBytes)
+        public byte[] EncodeUint32(uint i, int numBytes)
         {
             return EncodeInt32((int)i, numBytes);
         }

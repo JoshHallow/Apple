@@ -16,6 +16,7 @@ namespace Apple.Application.Base.Connection
 
         public SocketManager(SocketSettings settings)
         {
+            Console.WriteLine("Hello123");
             _settings = settings;
             _serverSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
@@ -38,7 +39,12 @@ namespace Apple.Application.Base.Connection
         {
             try
             {
-                Apple.Game.PlayerManager.CreatePlayer(_serverSocket.EndAccept(AsyncResult));
+                Console.WriteLine("Hello");
+                if (!Apple.Game.PlayerManager.TryCreatePlayer(_serverSocket.EndAccept(AsyncResult)))
+                {
+                    _serverSocket.EndAccept(AsyncResult).Shutdown(SocketShutdown.Both);
+                    _serverSocket.EndAccept(AsyncResult).Close();
+                }
             }
             catch (Exception exception)
             {

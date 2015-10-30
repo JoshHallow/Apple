@@ -10,3 +10,103 @@ File name: 'C:\Users\Davinia\Documents\GitHub\Apple\Apple\bin\Debug\config.ini'
    at System.IO.File.ReadLines(String path)
    at Apple.Application.Base.Config.AppleConfig.Initialize() in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Config\AppleConfig.cs:line 53
 
+Date/Time: 2015-10-29 23:09:38,606
+Thread: 16
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-29 23:09:38,637
+Thread: 16
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-29 23:09:38,642
+Thread: 16
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-29 23:09:38,652
+Thread: 16
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-29 23:09:38,659
+Thread: 16
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-29 23:09:38,666
+Thread: 16
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-29 23:09:38,673
+Thread: 16
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-29 23:09:38,680
+Thread: 16
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-29 23:09:38,687
+Thread: 16
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-29 23:09:38,694
+Thread: 16
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-29 23:09:38,701
+Thread: 16
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-29 23:09:38,708
+Thread: 16
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-29 23:09:38,718
+Thread: 16
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-29 23:09:38,725
+Thread: 16
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-29 23:09:38,732
+Thread: 16
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-29 23:09:38,739
+Thread: 16
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-29 23:09:38,745
+Thread: 16
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-29 23:09:38,752
+Thread: 16
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-29 23:09:38,775
+Thread: 16
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-29 23:10:39,449
+Thread: 14
+System.OverflowException: Arithmetic operation resulted in an overflow.
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 96
+

@@ -49,7 +49,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Apple.cs" />
+    <Compile Include="Application\Base\Communication\Packets\Incoming\IncomingHeaders.cs" />
     <Compile Include="Application\Base\Communication\Packets\Incoming\IncomingPacket.cs" />
+    <Compile Include="Application\Base\Communication\Packets\Outgoing\OutgoingHeaders.cs" />
     <Compile Include="Application\Base\Communication\Packets\PacketManager.cs" />
     <Compile Include="Application\Base\Config\AppleConfig.cs" />
     <Compile Include="Application\Base\Core\Util\AppleEncoding.cs" />
@@ -72,7 +74,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Application\Base\Communication\Packets\Outgoing\" />
     <Folder Include="Application\Game\Players\Components\Roleplay\" />
   </ItemGroup>
   <ItemGroup>

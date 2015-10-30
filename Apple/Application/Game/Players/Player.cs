@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Apple.Application.Game.Players
 {
-    internal sealed class Player
+    sealed class Player
     {
         private readonly PlayerData _playerData;
         private readonly UserData _userData;
@@ -19,7 +19,7 @@ namespace Apple.Application.Game.Players
         private readonly ILog _log;
         private bool _beingDisconnected;
 
-        internal Player(uint id, Socket socket)
+        public Player(uint id, Socket socket)
         {
             _playerData = new PlayerData(id, socket);
             _log = LogManager.GetLogger(typeof(Player));
@@ -27,7 +27,7 @@ namespace Apple.Application.Game.Players
             StartPacketProcessing();
         }
 
-        internal PlayerData PlayerData
+        public PlayerData PlayerData
         {
             get { return _playerData; }
         }
@@ -64,6 +64,8 @@ namespace Apple.Application.Game.Players
             if (packetData.Length <= 0)
                 return;
 
+            Console.WriteLine("Attempting to handle packet " + packetData[0]);
+
             if (packetData[0] == 60)
             {
                 SendData("<?xml version=\"1.0\"?>\r\n<!DOCTYPE cross-domain-policy SYSTEM \"/xml/dtds/cross-domain-policy.dtd\">\r\n<cross-domain-policy>\r\n<allow-access-from domain=\"*\" to-ports=\"" +
@@ -73,7 +75,44 @@ namespace Apple.Application.Game.Players
             }
             else if (packetData[0] != 67)
             {
-                Console.WriteLine("Attempting to handle packet " + packetData[0]);
+                int packetPosition = 0;
+                while (packetPosition < packetData.Length)
+                {
+                    try
+                    {
+                        int packetLength = Apple.Encoding.DecodeInt32(new byte[] 
+                        { 
+                            packetData[packetPosition++], 
+                            packetData[packetPosition++], 
+                            packetData[packetPosition++] 
+                        });
+
+                        uint packetId = Apple.Encoding.DecodeUInt32(new byte[] 
+                        { 
+                            packetData[packetPosition++], 
+                            packetData[packetPosition++] 
+                        });
+
+                        byte[] packetContent = new byte[packetLength - 2];
+
+                        for (int i = 0; i < packetContent.Length && packetPosition < packetData.Length; i++)
+                        {
+                            packetContent[i] = packetData[packetPosition++];
+                        }
+
+                        IncomingPacket incomingPacket = new IncomingPacket(packetId, packetContent);
+
+                        if (incomingPacket != null)
+                        {
+                        }
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine(e.StackTrace);
+                        _log.Error(e);
+                        Apple.Game.PlayerManager.DisposePlayer(_playerData.PlayerId);
+                    }
+                }
             }
         }
 

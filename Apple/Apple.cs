@@ -7,6 +7,7 @@ using Apple.Application.Base.Sockets;
 using System.Net;
 using log4net;
 using Apple.Application.Game;
+using Apple.Application.Base.Core.Util;
 
 namespace Apple
 {
@@ -18,6 +19,7 @@ namespace Apple
         private static GameManager _gameManager;
         private static ServerInformation _severInfo;
         private static AppleConfig _appleConfig;
+        private static AppleEncoding _appleEncoding;
 
         public Apple()
         {
@@ -30,6 +32,8 @@ namespace Apple
                 Developers = new List<string> { "Josh Hallow as creator." }
             };
 
+            _appleConfig = new AppleConfig("config.ini");
+
             SocketSettings socketSettings = new SocketSettings
             {
                 EndPoint = new IPEndPoint(IPAddress.Any, int.Parse(_appleConfig.GetConfigElement("game.socket.port"))),
@@ -41,8 +45,7 @@ namespace Apple
             _consoleWorker = new ConsoleWorker(ushort.Parse(interval));
 
             _socketManager = new SocketManager(socketSettings);
-            _appleConfig = new AppleConfig("config.ini");
-
+            _appleEncoding = new AppleEncoding();
             _gameManager = new GameManager();
         }
 
@@ -59,6 +62,11 @@ namespace Apple
         public static AppleConfig Config
         {
             get { return _appleConfig; }
+        }
+
+        public static AppleEncoding Encoding
+        {
+            get { return _appleEncoding; }
         }
     }
 }

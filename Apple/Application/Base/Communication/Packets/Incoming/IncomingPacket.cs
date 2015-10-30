@@ -16,5 +16,10 @@ namespace Apple.Application.Base.Communication.Packets.Incoming
             _packetId = PacketId;
             _packetBody = PacketBody;
         }
+
+        public uint PacketId
+        {
+            get { return _packetId; }
+        }
     }
 }
