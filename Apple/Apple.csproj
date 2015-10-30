@@ -41,6 +41,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,9 +50,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Apple.cs" />
+    <Compile Include="Application\Base\Communication\Packets\Incoming\Events\Handshake\InitCryptoEvent.cs" />
+    <Compile Include="Application\Base\Communication\Packets\Incoming\Events\Handshake\ReleaseVersionEvent.cs" />
     <Compile Include="Application\Base\Communication\Packets\Incoming\IncomingHeaders.cs" />
     <Compile Include="Application\Base\Communication\Packets\Incoming\IncomingPacket.cs" />
+    <Compile Include="Application\Base\Communication\Packets\IPacketEvent.cs" />
+    <Compile Include="Application\Base\Communication\Packets\Outgoing\Composers\Handshake\InitCryptoComposer.cs" />
     <Compile Include="Application\Base\Communication\Packets\Outgoing\OutgoingHeaders.cs" />
+    <Compile Include="Application\Base\Communication\Packets\Outgoing\OutgoingPacket.cs" />
     <Compile Include="Application\Base\Communication\Packets\PacketManager.cs" />
     <Compile Include="Application\Base\Config\AppleConfig.cs" />
     <Compile Include="Application\Base\Core\Util\AppleEncoding.cs" />

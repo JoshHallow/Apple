@@ -8,16 +8,16 @@ namespace Apple.Application.Base.Communication.Packets.Incoming
 {
     class IncomingPacket
     {
-        private readonly uint _packetId;
+        private readonly int _packetId;
         private readonly byte[] _packetBody;
 
-        public IncomingPacket(uint PacketId, byte[] PacketBody)
+        public IncomingPacket(int PacketId, byte[] PacketBody)
         {
             _packetId = PacketId;
             _packetBody = PacketBody;
         }
 
-        public uint PacketId
+        public int PacketId
         {
             get { return _packetId; }
         }

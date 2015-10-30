@@ -51,3 +51,203 @@ File name: 'C:\Users\Davinia\Documents\GitHub\Apple\Apple\bin\Debug\config.ini'
 2015-10-29 23:10:39,335 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
 2015-10-29 23:10:39,449 ERROR - Apple.Application.Game.Players.Player >> System.OverflowException: Arithmetic operation resulted in an overflow.
    at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 96
+2015-10-30 02:43:26,667 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 02:43:26,771 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 02:43:26,999 ERROR - Apple.Application.Game.Players.Player >> System.OverflowException: Arithmetic operation resulted in an overflow.
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 96
+2015-10-30 02:43:27,025 WARN  - Apple.Application.Base.Communication.Packets.PacketManager >> Unhandled packet 1042
+2015-10-30 02:48:31,313 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 02:48:31,361 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 02:53:32,350 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 02:53:32,380 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 02:53:35,594 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 02:53:35,644 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 02:57:25,984 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 02:59:21,257 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 02:59:21,308 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 02:59:33,067 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 02:59:33,141 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 03:00:13,829 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 03:00:13,875 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 03:00:45,327 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 03:00:45,356 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 03:02:33,414 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 03:02:33,443 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 03:03:03,781 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 03:03:03,808 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 03:07:00,410 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 03:07:00,454 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 03:12:09,461 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 03:12:09,490 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 03:12:09,624 ERROR - Apple.Application.Game.Players.Player >> System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+2015-10-30 03:12:09,633 ERROR - Apple.Application.Game.Players.Player >> System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+2015-10-30 03:12:09,643 ERROR - Apple.Application.Game.Players.Player >> System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+2015-10-30 03:12:09,654 ERROR - Apple.Application.Game.Players.Player >> System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+2015-10-30 03:12:09,663 ERROR - Apple.Application.Game.Players.Player >> System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+2015-10-30 03:12:09,672 ERROR - Apple.Application.Game.Players.Player >> System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+2015-10-30 03:12:09,680 ERROR - Apple.Application.Game.Players.Player >> System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+2015-10-30 03:12:09,688 ERROR - Apple.Application.Game.Players.Player >> System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+2015-10-30 03:12:09,696 ERROR - Apple.Application.Game.Players.Player >> System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+2015-10-30 03:12:09,706 ERROR - Apple.Application.Game.Players.Player >> System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+2015-10-30 03:12:09,714 ERROR - Apple.Application.Game.Players.Player >> System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+2015-10-30 03:12:09,724 ERROR - Apple.Application.Game.Players.Player >> System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+2015-10-30 03:12:09,731 ERROR - Apple.Application.Game.Players.Player >> System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+2015-10-30 03:12:09,740 ERROR - Apple.Application.Game.Players.Player >> System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+2015-10-30 03:12:09,747 ERROR - Apple.Application.Game.Players.Player >> System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+2015-10-30 03:12:09,757 ERROR - Apple.Application.Game.Players.Player >> System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+2015-10-30 03:12:09,764 ERROR - Apple.Application.Game.Players.Player >> System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+2015-10-30 03:12:09,772 ERROR - Apple.Application.Game.Players.Player >> System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+2015-10-30 03:12:09,780 ERROR - Apple.Application.Game.Players.Player >> System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+2015-10-30 03:19:37,575 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 03:19:37,600 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 03:19:37,697 ERROR - Apple.Application.Game.Players.Player >> System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 81
+2015-10-30 03:23:17,742 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 03:23:17,770 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 03:23:42,554 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 03:23:42,633 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 03:23:42,718 INFO  - Apple.Application.Base.Communication.Packets.PacketManager >> Handled packet 4000
+2015-10-30 03:25:17,263 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 03:25:17,339 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 03:25:17,651 INFO  - Apple.Application.Base.Communication.Packets.PacketManager >> Handled packet 4000
+2015-10-30 03:25:17,652 WARN  - Apple.Application.Base.Communication.Packets.PacketManager >> Unhandled packet 112
+2015-10-30 03:30:54,820 INFO  - Apple.Apple >> Apple Server is ready.
+2015-10-30 03:31:08,038 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 03:31:08,079 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 03:31:08,744 INFO  - Apple.Application.Base.Communication.Packets.PacketManager >> Handled packet 4000
+2015-10-30 03:31:08,747 WARN  - Apple.Application.Base.Communication.Packets.PacketManager >> Unhandled packet 112
+2015-10-30 03:31:54,841 INFO  - Apple.Apple >> Apple server is loading.
+2015-10-30 03:31:54,862 INFO  - Apple.Apple >> Apple Server is ready.
+2015-10-30 03:35:56,591 INFO  - Apple.Apple >> Apple server is loading.
+2015-10-30 03:35:56,619 INFO  - Apple.Apple >> Apple Server is ready.
+2015-10-30 03:36:03,680 INFO  - Apple.Apple >> Apple server is loading.
+2015-10-30 03:36:03,703 INFO  - Apple.Apple >> Apple Server is ready.
+2015-10-30 03:37:03,673 INFO  - Apple.Apple >> Apple server is loading.
+2015-10-30 03:37:22,486 INFO  - Apple.Apple >> Apple Server is ready.
+2015-10-30 03:37:39,245 INFO  - Apple.Apple >> Apple server is loading.
+2015-10-30 03:37:39,273 INFO  - Apple.Apple >> Apple Server is ready.
+2015-10-30 03:37:46,086 INFO  - Apple.Apple >> Apple server is loading.
+2015-10-30 03:37:46,123 INFO  - Apple.Apple >> Apple Server is ready.
+2015-10-30 04:01:41,227 INFO  - Apple.Apple >> Apple server is loading.
+2015-10-30 04:01:41,264 INFO  - Apple.Apple >> Apple Server is ready.
+2015-10-30 04:01:49,385 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 04:01:49,454 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 04:01:49,844 INFO  - Apple.Application.Base.Communication.Packets.PacketManager >> Handled packet 4000
+2015-10-30 04:01:49,895 INFO  - Apple.Application.Base.Communication.Packets.PacketManager >> Handled packet 112
+2015-10-30 04:12:54,775 INFO  - Apple.Apple >> Apple server is loading.
+2015-10-30 04:12:54,800 INFO  - Apple.Apple >> Apple Server is ready.
+2015-10-30 04:28:54,851 INFO  - Apple.Apple >> Apple server is loading.
+2015-10-30 04:28:54,879 INFO  - Apple.Apple >> Apple Server is ready.
+2015-10-30 04:29:12,444 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 04:29:12,523 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 04:29:13,117 INFO  - Apple.Application.Base.Communication.Packets.PacketManager >> Handled packet 4000
+2015-10-30 04:29:13,200 ERROR - Apple.Application.Game.Players.Player >> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Apple.Application.Base.Communication.Packets.Outgoing.OutgoingPacket.WriteString(String s) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\Outgoing\OutgoingPacket.cs:line 60
+   at Apple.Application.Base.Communication.Packets.Outgoing.Composers.Handshake.InitCryptoComposer..ctor() in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\Outgoing\Composers\Handshake\InitCryptoComposer.cs:line 14
+   at Apple.Application.Base.Communication.Packets.Incoming.Events.Handshake.InitCryptoEvent.handleIncomingPacket(Player player, IncomingPacket packet) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\Incoming\Events\Handshake\InitCryptoEvent.cs:line 15
+   at Apple.Application.Base.Communication.Packets.PacketManager.ExecuteIncomingPacket(Player player, IncomingPacket packet) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\PacketManager.cs:line 36
+   at Apple.Application.Game.Players.PlayerPacketManager.ExecuteIncomingPacket(Player player, IncomingPacket packet) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Components\Player\Packets\PlayerPacketManager.cs:line 25
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 107
+2015-10-30 04:31:48,920 INFO  - Apple.Apple >> Apple server is loading.
+2015-10-30 04:31:48,951 INFO  - Apple.Apple >> Apple Server is ready.
+2015-10-30 04:31:56,776 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 04:31:56,804 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 04:31:57,295 INFO  - Apple.Application.Base.Communication.Packets.PacketManager >> Handled packet 4000
+2015-10-30 04:31:57,299 INFO  - Apple.Application.Base.Communication.Packets.PacketManager >> Handled packet 112
+2015-10-30 04:32:07,292 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 04:32:07,351 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 04:32:07,465 INFO  - Apple.Application.Base.Communication.Packets.PacketManager >> Handled packet 4000
+2015-10-30 04:32:07,466 INFO  - Apple.Application.Base.Communication.Packets.PacketManager >> Handled packet 112
+2015-10-30 05:44:52,917 INFO  - Apple.Apple >> Apple server is loading.
+2015-10-30 05:44:52,940 INFO  - Apple.Apple >> Apple Server is ready.
+2015-10-30 05:46:13,482 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 05:46:13,550 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 05:46:13,742 INFO  - Apple.Application.Base.Communication.Packets.PacketManager >> Handled packet 4000
+2015-10-30 05:46:13,765 ERROR - Apple.Application.Game.Players.Player >> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Apple.Application.Base.Communication.Packets.Outgoing.OutgoingPacket.WriteString(String s) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\Outgoing\OutgoingPacket.cs:line 60
+   at Apple.Application.Base.Communication.Packets.Outgoing.Composers.Handshake.InitCryptoComposer..ctor() in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\Outgoing\Composers\Handshake\InitCryptoComposer.cs:line 14
+   at Apple.Application.Base.Communication.Packets.Incoming.Events.Handshake.InitCryptoEvent.handleIncomingPacket(Player player, IncomingPacket packet) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\Incoming\Events\Handshake\InitCryptoEvent.cs:line 15
+   at Apple.Application.Base.Communication.Packets.PacketManager.ExecuteIncomingPacket(Player player, IncomingPacket packet) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\PacketManager.cs:line 36
+   at Apple.Application.Game.Players.PlayerPacketManager.ExecuteIncomingPacket(Player player, IncomingPacket packet) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Components\Player\Packets\PlayerPacketManager.cs:line 25
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 107
+2015-10-30 06:03:45,028 INFO  - Apple.Apple >> Apple server is loading.
+2015-10-30 06:03:45,050 INFO  - Apple.Apple >> Apple Server is ready.
+2015-10-30 06:03:53,571 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 06:03:53,602 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 06:03:53,919 INFO  - Apple.Application.Base.Communication.Packets.PacketManager >> Handled packet 4000
+2015-10-30 06:03:53,986 ERROR - Apple.Application.Game.Players.Player >> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Apple.Application.Base.Core.Encryption.EncryptionHandler.GetRsaDHGeneratorKey() in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Encryption\EncryptionHandler.cs:line 42
+   at Apple.Application.Base.Communication.Packets.Outgoing.Composers.Handshake.InitCryptoComposer..ctor() in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\Outgoing\Composers\Handshake\InitCryptoComposer.cs:line 15
+   at Apple.Application.Base.Communication.Packets.Incoming.Events.Handshake.InitCryptoEvent.handleIncomingPacket(Player player, IncomingPacket packet) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\Incoming\Events\Handshake\InitCryptoEvent.cs:line 15
+   at Apple.Application.Base.Communication.Packets.PacketManager.ExecuteIncomingPacket(Player player, IncomingPacket packet) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\PacketManager.cs:line 36
+   at Apple.Application.Game.Players.PlayerPacketManager.ExecuteIncomingPacket(Player player, IncomingPacket packet) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Components\Player\Packets\PlayerPacketManager.cs:line 25
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 107
+2015-10-30 06:04:05,272 INFO  - Apple.Apple >> Apple server is loading.
+2015-10-30 06:04:05,293 INFO  - Apple.Apple >> Apple Server is ready.
+2015-10-30 06:04:09,987 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 06:04:10,032 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 06:04:10,127 INFO  - Apple.Application.Base.Communication.Packets.PacketManager >> Handled packet 4000
+2015-10-30 06:04:10,167 ERROR - Apple.Application.Game.Players.Player >> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Apple.Application.Base.Core.Encryption.EncryptionHandler.GetRsaDHGeneratorKey() in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Encryption\EncryptionHandler.cs:line 42
+   at Apple.Application.Base.Communication.Packets.Outgoing.Composers.Handshake.InitCryptoComposer..ctor() in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\Outgoing\Composers\Handshake\InitCryptoComposer.cs:line 15
+   at Apple.Application.Base.Communication.Packets.Incoming.Events.Handshake.InitCryptoEvent.handleIncomingPacket(Player player, IncomingPacket packet) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\Incoming\Events\Handshake\InitCryptoEvent.cs:line 15
+   at Apple.Application.Base.Communication.Packets.PacketManager.ExecuteIncomingPacket(Player player, IncomingPacket packet) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\PacketManager.cs:line 36
+   at Apple.Application.Game.Players.PlayerPacketManager.ExecuteIncomingPacket(Player player, IncomingPacket packet) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Components\Player\Packets\PlayerPacketManager.cs:line 25
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 107
+2015-10-30 06:06:01,115 INFO  - Apple.Apple >> Apple server is loading.
+2015-10-30 06:06:01,136 INFO  - Apple.Apple >> Apple Server is ready.
+2015-10-30 06:06:06,370 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 06:06:06,399 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 06:06:06,730 INFO  - Apple.Application.Base.Communication.Packets.PacketManager >> Handled packet 4000
+2015-10-30 06:06:06,760 ERROR - Apple.Application.Game.Players.Player >> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Apple.Application.Base.Core.Encryption.EncryptionHandler.GetRsaDiffieHellmanGeneratorKey() in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Encryption\EncryptionHandler.cs:line 42
+   at Apple.Application.Base.Communication.Packets.Outgoing.Composers.Handshake.InitCryptoComposer..ctor() in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\Outgoing\Composers\Handshake\InitCryptoComposer.cs:line 15
+   at Apple.Application.Base.Communication.Packets.Incoming.Events.Handshake.InitCryptoEvent.handleIncomingPacket(Player player, IncomingPacket packet) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\Incoming\Events\Handshake\InitCryptoEvent.cs:line 15
+   at Apple.Application.Base.Communication.Packets.PacketManager.ExecuteIncomingPacket(Player player, IncomingPacket packet) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\PacketManager.cs:line 36
+   at Apple.Application.Game.Players.PlayerPacketManager.ExecuteIncomingPacket(Player player, IncomingPacket packet) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Components\Player\Packets\PlayerPacketManager.cs:line 25
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 107
+2015-10-30 06:10:41,191 INFO  - Apple.Apple >> Apple server is loading.
+2015-10-30 06:10:41,213 INFO  - Apple.Apple >> Apple Server is ready.
+2015-10-30 06:10:46,055 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 06:10:46,100 INFO  - Apple.Application.Game.Players.PlayerManager >> Incoming connection from 127.0.0.1
+2015-10-30 06:10:46,303 INFO  - Apple.Application.Base.Communication.Packets.PacketManager >> Handled packet 4000
+2015-10-30 06:10:46,428 INFO  - Apple.Application.Base.Communication.Packets.PacketManager >> Handled packet 112
+2015-10-30 06:10:46,618 WARN  - Apple.Application.Base.Communication.Packets.PacketManager >> Unhandled packet 3713

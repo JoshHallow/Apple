@@ -110,3 +110,177 @@ Thread: 14
 System.OverflowException: Arithmetic operation resulted in an overflow.
    at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 96
 
+Date/Time: 2015-10-30 02:43:26,999
+Thread: 14
+System.OverflowException: Arithmetic operation resulted in an overflow.
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 96
+
+Date/Time: 2015-10-30 03:12:09,624
+Thread: 14
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-30 03:12:09,633
+Thread: 14
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-30 03:12:09,643
+Thread: 14
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-30 03:12:09,654
+Thread: 14
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-30 03:12:09,663
+Thread: 14
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-30 03:12:09,672
+Thread: 14
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-30 03:12:09,680
+Thread: 14
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-30 03:12:09,688
+Thread: 14
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-30 03:12:09,696
+Thread: 14
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-30 03:12:09,706
+Thread: 14
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-30 03:12:09,714
+Thread: 14
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-30 03:12:09,724
+Thread: 14
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-30 03:12:09,731
+Thread: 14
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-30 03:12:09,740
+Thread: 14
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-30 03:12:09,747
+Thread: 14
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-30 03:12:09,757
+Thread: 14
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-30 03:12:09,764
+Thread: 14
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-30 03:12:09,772
+Thread: 14
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-30 03:12:09,780
+Thread: 14
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 83
+
+Date/Time: 2015-10-30 03:19:37,697
+Thread: 14
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at Apple.Application.Base.Core.Util.AppleEncoding.DecodeInt32(Byte[] v) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Util\AppleEncoding.cs:line 13
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 81
+
+Date/Time: 2015-10-30 04:29:13,200
+Thread: 16
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Apple.Application.Base.Communication.Packets.Outgoing.OutgoingPacket.WriteString(String s) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\Outgoing\OutgoingPacket.cs:line 60
+   at Apple.Application.Base.Communication.Packets.Outgoing.Composers.Handshake.InitCryptoComposer..ctor() in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\Outgoing\Composers\Handshake\InitCryptoComposer.cs:line 14
+   at Apple.Application.Base.Communication.Packets.Incoming.Events.Handshake.InitCryptoEvent.handleIncomingPacket(Player player, IncomingPacket packet) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\Incoming\Events\Handshake\InitCryptoEvent.cs:line 15
+   at Apple.Application.Base.Communication.Packets.PacketManager.ExecuteIncomingPacket(Player player, IncomingPacket packet) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\PacketManager.cs:line 36
+   at Apple.Application.Game.Players.PlayerPacketManager.ExecuteIncomingPacket(Player player, IncomingPacket packet) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Components\Player\Packets\PlayerPacketManager.cs:line 25
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 107
+
+Date/Time: 2015-10-30 05:46:13,765
+Thread: 14
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Apple.Application.Base.Communication.Packets.Outgoing.OutgoingPacket.WriteString(String s) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\Outgoing\OutgoingPacket.cs:line 60
+   at Apple.Application.Base.Communication.Packets.Outgoing.Composers.Handshake.InitCryptoComposer..ctor() in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\Outgoing\Composers\Handshake\InitCryptoComposer.cs:line 14
+   at Apple.Application.Base.Communication.Packets.Incoming.Events.Handshake.InitCryptoEvent.handleIncomingPacket(Player player, IncomingPacket packet) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\Incoming\Events\Handshake\InitCryptoEvent.cs:line 15
+   at Apple.Application.Base.Communication.Packets.PacketManager.ExecuteIncomingPacket(Player player, IncomingPacket packet) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\PacketManager.cs:line 36
+   at Apple.Application.Game.Players.PlayerPacketManager.ExecuteIncomingPacket(Player player, IncomingPacket packet) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Components\Player\Packets\PlayerPacketManager.cs:line 25
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 107
+
+Date/Time: 2015-10-30 06:03:53,986
+Thread: 14
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Apple.Application.Base.Core.Encryption.EncryptionHandler.GetRsaDHGeneratorKey() in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Encryption\EncryptionHandler.cs:line 42
+   at Apple.Application.Base.Communication.Packets.Outgoing.Composers.Handshake.InitCryptoComposer..ctor() in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\Outgoing\Composers\Handshake\InitCryptoComposer.cs:line 15
+   at Apple.Application.Base.Communication.Packets.Incoming.Events.Handshake.InitCryptoEvent.handleIncomingPacket(Player player, IncomingPacket packet) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\Incoming\Events\Handshake\InitCryptoEvent.cs:line 15
+   at Apple.Application.Base.Communication.Packets.PacketManager.ExecuteIncomingPacket(Player player, IncomingPacket packet) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\PacketManager.cs:line 36
+   at Apple.Application.Game.Players.PlayerPacketManager.ExecuteIncomingPacket(Player player, IncomingPacket packet) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Components\Player\Packets\PlayerPacketManager.cs:line 25
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 107
+
+Date/Time: 2015-10-30 06:04:10,167
+Thread: 15
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Apple.Application.Base.Core.Encryption.EncryptionHandler.GetRsaDHGeneratorKey() in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Encryption\EncryptionHandler.cs:line 42
+   at Apple.Application.Base.Communication.Packets.Outgoing.Composers.Handshake.InitCryptoComposer..ctor() in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\Outgoing\Composers\Handshake\InitCryptoComposer.cs:line 15
+   at Apple.Application.Base.Communication.Packets.Incoming.Events.Handshake.InitCryptoEvent.handleIncomingPacket(Player player, IncomingPacket packet) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\Incoming\Events\Handshake\InitCryptoEvent.cs:line 15
+   at Apple.Application.Base.Communication.Packets.PacketManager.ExecuteIncomingPacket(Player player, IncomingPacket packet) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\PacketManager.cs:line 36
+   at Apple.Application.Game.Players.PlayerPacketManager.ExecuteIncomingPacket(Player player, IncomingPacket packet) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Components\Player\Packets\PlayerPacketManager.cs:line 25
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 107
+
+Date/Time: 2015-10-30 06:06:06,760
+Thread: 14
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Apple.Application.Base.Core.Encryption.EncryptionHandler.GetRsaDiffieHellmanGeneratorKey() in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Core\Encryption\EncryptionHandler.cs:line 42
+   at Apple.Application.Base.Communication.Packets.Outgoing.Composers.Handshake.InitCryptoComposer..ctor() in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\Outgoing\Composers\Handshake\InitCryptoComposer.cs:line 15
+   at Apple.Application.Base.Communication.Packets.Incoming.Events.Handshake.InitCryptoEvent.handleIncomingPacket(Player player, IncomingPacket packet) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\Incoming\Events\Handshake\InitCryptoEvent.cs:line 15
+   at Apple.Application.Base.Communication.Packets.PacketManager.ExecuteIncomingPacket(Player player, IncomingPacket packet) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Base\Communication\Packets\PacketManager.cs:line 36
+   at Apple.Application.Game.Players.PlayerPacketManager.ExecuteIncomingPacket(Player player, IncomingPacket packet) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Components\Player\Packets\PlayerPacketManager.cs:line 25
+   at Apple.Application.Game.Players.Player.OnReceiveData(IAsyncResult AsyncResult) in c:\Users\Davinia\Documents\GitHub\Apple\Apple\Application\Game\Players\Player.cs:line 107
+

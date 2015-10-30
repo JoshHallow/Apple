@@ -263,6 +263,7 @@ namespace Apple.Application.Base.Communication.Packets.Incoming
         public const int FollowFriendMessageEvent = 2511; //incoming@apple:2511
         public const int FriendListUpdateMessageEvent = 3653; //incoming@apple:3653
         public const int FriendRequestListLoad = 41; //incoming@apple:41
+
         public const int AcceptFriendMessageEvent = 1269; //incoming@apple:1269
         public const int DeclineFriendMessageEvent = 2394; //incoming@apple:2394
         public const int DeleteFriendMessageEvent = 2443; //incoming@apple:2443

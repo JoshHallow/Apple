@@ -21,6 +21,11 @@ namespace Apple.Application.Base.Core
 
         public void OnElapsed(object sender, ElapsedEventArgs e)
         {
+            UpdateConsoleTitle();
+        }
+
+        public void UpdateConsoleTitle()
+        {
             DateTime Startup = Apple.ServerInformation.ServerStarted;
             TimeSpan Uptime = DateTime.Now - Startup;
 
@@ -29,7 +34,7 @@ namespace Apple.Application.Base.Core
             string mins = String.Format("{0} min{1}", Uptime.Minutes, (Uptime.Minutes != 1 ? "s" : ""));
 
             string uptime = days + hours + mins;
-            Console.Title = "Apple Server | Uptime: " + uptime;
+            Console.Title = Apple.ServerInformation.Title + " | Uptime: " + uptime;
         }
     }
 }

@@ -8,42 +8,24 @@ namespace Apple.Application.Base.Core.Util
 {
     class AppleEncoding
     {
-        public int DecodeInt32(byte[] bzData)
+        public int DecodeInt32(byte[] v)
         {
-            int num = 0;
-            int num2 = 0;
-            for (int i = bzData.Length - 1; i >= 0; i--)
-            {
-                int num4 = bzData[i] - 0x40;
-                if (num2 > 0)
-                {
-                    num4 *= (int)Math.Pow(64.0, (double)num2);
-                }
-                num += num4;
-                num2++;
-            }
-            return num;
+            if ((v[0] | v[1] | v[2] | v[3]) < 0)
+                return -1;
+            return ((v[0] << 24) + (v[1] << 16) + (v[2] << 8) + (v[3]));
+        }
+
+        public Int16 DecodeInt16(byte[] v)
+        {
+            if ((v[0] | v[1]) < 0)
+                return -1;
+            var result = ((v[0] << 8) + (v[1]));
+            return (Int16)result;
         }
 
         public uint DecodeUInt32(byte[] bzData)
         {
             return (uint)DecodeInt32(bzData);
-        }
-
-        public byte[] EncodeInt32(int i, int numBytes)
-        {
-            byte[] buffer = new byte[numBytes];
-            for (int j = 1; j <= numBytes; j++)
-            {
-                int num2 = (numBytes - j) * 6;
-                buffer[j - 1] = (byte)(0x40 + ((i >> num2) & 0x3f));
-            }
-            return buffer;
-        }
-
-        public byte[] EncodeUint32(uint i, int numBytes)
-        {
-            return EncodeInt32((int)i, numBytes);
         }
     }
 }

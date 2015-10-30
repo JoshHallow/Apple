@@ -8,6 +8,7 @@ using System.Net;
 using log4net;
 using Apple.Application.Game;
 using Apple.Application.Base.Core.Util;
+using Apple.Application.Base.Communication.Packets;
 
 namespace Apple
 {
@@ -16,10 +17,13 @@ namespace Apple
         private ConsoleWorker _consoleWorker;
         private SocketManager _socketManager;
 
+        private readonly ILog _log;
+
         private static GameManager _gameManager;
         private static ServerInformation _severInfo;
         private static AppleConfig _appleConfig;
         private static AppleEncoding _appleEncoding;
+        private static PacketManager _packetManager;
 
         public Apple()
         {
@@ -29,8 +33,11 @@ namespace Apple
                 ServerVersion = new Version("2.0.0"),
                 Author = "Josh Hallow",
                 Title = "Apple Server",
-                Developers = new List<string> { "Josh Hallow as creator." }
+                Developers = new List<string> { "Josh Hallow" }
             };
+
+            _log = LogManager.GetLogger(typeof(Apple));
+            _log.Info("Apple server is loading.");
 
             _appleConfig = new AppleConfig("config.ini");
 
@@ -41,12 +48,16 @@ namespace Apple
                 _log = LogManager.GetLogger(typeof(SocketManager))
             };
 
-            string interval = _appleConfig.GetConfigElement("console.timer.interval");
-            _consoleWorker = new ConsoleWorker(ushort.Parse(interval));
-
             _socketManager = new SocketManager(socketSettings);
             _appleEncoding = new AppleEncoding();
+            _packetManager = new PacketManager();
             _gameManager = new GameManager();
+
+            string interval = _appleConfig.GetConfigElement("console.timer.interval");
+            _consoleWorker = new ConsoleWorker(ushort.Parse(interval));
+            _consoleWorker.UpdateConsoleTitle();
+
+            _log.Info(_severInfo.Title + " is ready.");
         }
 
         public static ServerInformation ServerInformation
@@ -67,6 +78,11 @@ namespace Apple
         public static AppleEncoding Encoding
         {
             get { return _appleEncoding; }
+        }
+
+        public static PacketManager PacketManager
+        {
+            get { return _packetManager; }
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Apple.Application.Base.Communication.Packets.Incoming;
+using Apple.Application.Base.Communication.Packets.Outgoing;
 using Apple.Application.Game.Players.Data;
 using log4net;
 using System;
@@ -50,44 +51,46 @@ namespace Apple.Application.Game.Players
 
         private void OnReceiveData(IAsyncResult AsyncResult)
         {
-            int bytesRead = _playerData.PlayerSocket.EndReceive(AsyncResult);
-        
-            if (bytesRead <= 0 || bytesRead > _playerData.SocketBuffer.Length)
+            try
             {
-                Apple.Game.PlayerManager.DisposePlayer(_playerData.PlayerId);
-                return;
-            }
+                int bytesRead = _playerData.PlayerSocket.EndReceive(AsyncResult);
 
-            byte[] packetData = new byte[bytesRead];
-            Array.Copy(_playerData.SocketBuffer, packetData, bytesRead);
-            
-            if (packetData.Length <= 0)
-                return;
-
-            Console.WriteLine("Attempting to handle packet " + packetData[0]);
-
-            if (packetData[0] == 60)
-            {
-                SendData("<?xml version=\"1.0\"?>\r\n<!DOCTYPE cross-domain-policy SYSTEM \"/xml/dtds/cross-domain-policy.dtd\">\r\n<cross-domain-policy>\r\n<allow-access-from domain=\"*\" to-ports=\"" +
-                Apple.Config.GetConfigElement("game.socket.port") + "\" />\r\n</cross-domain-policy>\0");
-
-                Apple.Game.PlayerManager.DisposePlayer(_playerData.PlayerId);
-            }
-            else if (packetData[0] != 67)
-            {
-                int packetPosition = 0;
-                while (packetPosition < packetData.Length)
+                if (bytesRead == 0)
                 {
-                    try
+                    Apple.Game.PlayerManager.DisposePlayer(_playerData.PlayerId);
+                    return;
+                }
+
+                byte[] packetData = new byte[bytesRead];
+                Array.Copy(_playerData.SocketBuffer, packetData, bytesRead);
+
+                if (packetData.Length == 0)
+                    return;
+
+                if (packetData[0] == 60)
+                {
+                    SendData("<?xml version=\"1.0\"?>\r\n<!DOCTYPE cross-domain-policy SYSTEM \"/xml/dtds/cross-domain-policy.dtd\">\r\n<cross-domain-policy>\r\n<allow-access-from domain=\"*\" to-ports=\"" +
+                    Apple.Config.GetConfigElement("game.socket.port") + "\" />\r\n</cross-domain-policy>\0");
+
+                    Apple.Game.PlayerManager.DisposePlayer(_playerData.PlayerId);
+                }
+                else if (packetData[0] != 67)
+                {
+                    int packetPosition = 0;
+                    for (packetPosition = 0; packetPosition < packetData.Length; )
                     {
-                        int packetLength = Apple.Encoding.DecodeInt32(new byte[] 
+                        int packetLength = Apple.Encoding.DecodeInt32(new [] 
                         { 
+                            packetData[packetPosition++], 
                             packetData[packetPosition++], 
                             packetData[packetPosition++], 
                             packetData[packetPosition++] 
                         });
 
-                        uint packetId = Apple.Encoding.DecodeUInt32(new byte[] 
+                        if (packetLength < 2 || packetLength > 4096)
+                            return;
+
+                        short packetId = Apple.Encoding.DecodeInt16(new[] 
                         { 
                             packetData[packetPosition++], 
                             packetData[packetPosition++] 
@@ -96,25 +99,28 @@ namespace Apple.Application.Game.Players
                         byte[] packetContent = new byte[packetLength - 2];
 
                         for (int i = 0; i < packetContent.Length && packetPosition < packetData.Length; i++)
-                        {
                             packetContent[i] = packetData[packetPosition++];
-                        }
 
                         IncomingPacket incomingPacket = new IncomingPacket(packetId, packetContent);
 
                         if (incomingPacket != null)
-                        {
-                            //todo: handle packet
-                        }
-                    }
-                    catch (Exception e)
-                    {
-                        Console.WriteLine(e.StackTrace);
-                        _log.Error(e);
-                        Apple.Game.PlayerManager.DisposePlayer(_playerData.PlayerId);
+                            _playerData.PacketManager.ExecuteIncomingPacket(this, incomingPacket);
                     }
                 }
             }
+            catch (Exception e)
+            {
+                _log.Error(e);
+            }
+            finally
+            {
+                StartPacketProcessing();
+            }
+        }
+
+        public void SendPacket(OutgoingPacket packet)
+        {
+            this.SendData(packet.GetBytes());
         }
 
         private void SendData(string Data)

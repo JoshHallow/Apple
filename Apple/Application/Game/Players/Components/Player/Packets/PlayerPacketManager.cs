@@ -12,9 +12,9 @@ namespace Apple.Application.Game.Players
     {
         private bool _authenticationPassed;
 
-        public void ExecuteIncomingPacket(Player player, IncomingPacket Packet)
+        public void ExecuteIncomingPacket(Player player, IncomingPacket packet)
         {
-            if (Packet.PacketId == IncomingHeaders.SSOTicketMessageEvent)
+            if (packet.PacketId == IncomingHeaders.SSOTicketMessageEvent)
             {
                 if (_authenticationPassed)
                     return;
@@ -22,7 +22,7 @@ namespace Apple.Application.Game.Players
                 _authenticationPassed = true;
             }
 
-            //handle through main packet manager here
+            Apple.PacketManager.ExecuteIncomingPacket(player, packet);
         }
     }
 }
