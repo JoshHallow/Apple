@@ -10,19 +10,19 @@ namespace Apple.Application.Game.Players
 {
     class PlayerPacketManager
     {
+        private bool _authenticationPassed;
+
         public void ExecuteIncomingPacket(Player player, IncomingPacket Packet)
         {
-            if (Packet.PacketId == IncomingHeaders.SSOTicketMessageEvent && _authed)
-            {
-                return;
-            }
-
             if (Packet.PacketId == IncomingHeaders.SSOTicketMessageEvent)
             {
-                this._authed = true;
+                if (_authenticationPassed)
+                    return;
+
+                _authenticationPassed = true;
             }
 
-            Mango.GetServer().GetPacketManager().ExecutePacket(Session, Packet);
+            //handle through main packet manager here
         }
     }
 }

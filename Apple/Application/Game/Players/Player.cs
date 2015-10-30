@@ -104,6 +104,7 @@ namespace Apple.Application.Game.Players
 
                         if (incomingPacket != null)
                         {
+                            //todo: handle packet
                         }
                     }
                     catch (Exception e)
